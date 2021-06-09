@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import Header from './Header';
 import About from './About';
 import Menu from './Menu';
-import { useState } from 'react';
+import Footer from './Footer';
 
 const App = () => {
 	const coffeeData = [
@@ -48,6 +49,7 @@ const App = () => {
 			<About />
 			<div className="bg-company-image bg-bottom bg-cover h-64 md:h-96"></div>
 			<Menu coffee={coffeeData} dessert={dessertData} cartItems={cartItems} addToCart={handleAddToCart} badgeContent={getTotalItems(cartItems)} />
+			<Footer />
 		</div>
 	);
 }
