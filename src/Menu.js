@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Cart from './Cart';
-import Product from './Product'
+import Product from './Product';
+import coffeeBeans from './assets/images/coffee-beans.png';
 
 const Menu = (props) => {
 
@@ -8,20 +9,20 @@ const Menu = (props) => {
 
     return (
         <div className="relative min-h-screen max-w-screen-xl py-20 mx-auto pt-16 md:pt-36 px-4 text-gray-700">
-            <img src="./coffee_beans.png" alt="Coffee beans" className="absolute bottom-10 w-1/4"></img>
+            <img src={coffeeBeans} alt="Coffee beans" className="absolute bottom-10 w-1/4"></img>
 
-            <div className="px-10 md:px-20 mb-8" id="menu">
+            <div className="px-10 md:px-20 mb-10" id="menu">
                 <h2 className="text-center text-3xl md:text-5xl font-thin font-serif md:leading-relaxed">Our Menu</h2>
                 <p className="text-center text-lg md:text-xl font-light">Duis congue sapien non mauris tristique, eu porttitor arcu feugiat. Quisque sit amet quam sodales, porttitor lectus vitae, consectetur.</p>
             </div>
 
             <div className="max-w-md md:max-w-4xl mx-auto md:flex md:gap-20">
-                <div className="w-full mb-6">
-                    <h3 className="text-2xl md:text-3xl font-serif mb-5 text-yellow-800 text-center">Coffee</h3>
+                <div className="w-full mb-10">
+                    <h3 className="text-2xl md:text-3xl font-serif mb-5 text-center">Coffee</h3>
                     <Product productItems={props.coffee}  addToCart={props.addToCart}/>
                 </div>
                 <div className="w-full">
-                    <h3 className="text-2xl md:text-3xl font-serif mb-5 text-yellow-800 text-center">Desserts</h3>
+                    <h3 className="text-2xl md:text-3xl font-serif mb-5 text-center">Desserts</h3>
                     <Product productItems={props.dessert} addToCart={props.addToCart}/>
                 </div>
             </div>
