@@ -4,8 +4,8 @@ module.exports = {
     theme: {
 		extend: {
 			backgroundImage: theme => ({
-				'hero-pattern': "url('https://images.unsplash.com/photo-1620360289986-d9e73a6f475b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80')",
-				'company-image': "url('https://images.unsplash.com/photo-1551887196-72e32bfc7bf3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1528&q=80')"
+          'hero-pattern': "url(./assets/images/coffee-house-header.jpeg)",
+          'company-image': "url('./assets/images/coffee-house-interior.jpeg')"
 			}),
       skew: {
         '-25': '-25deg',
