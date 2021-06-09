@@ -3,6 +3,10 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
 		extend: {
+        fontFamily: {
+          'sans': ['Raleway'],
+          'serif': ['PlayfairDisplay'],
+        },
 			backgroundImage: theme => ({
           'hero-pattern': "url(./assets/images/coffee-house-header.jpeg)",
           'company-image': "url('./assets/images/coffee-house-interior.jpeg')"
