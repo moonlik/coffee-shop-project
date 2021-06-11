@@ -7,18 +7,18 @@ const navigation = [
 
 export default function Header() {
     return (
-      <div className="relative overflow-hidden bg-hero-pattern bg-center bg-cover md:bg-top pb-20 md:min-h-screen max-w-screen-2xl mx-auto">
-       <div className="absolute top-0 left-0 bottom-0 right-0 bg-opacity-60 bg-gray-100 transform origin-top-left -skew-y-25"></div>
-        <div className="max-w-screen-xl mx-auto">
-          <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-            <div className="relative pt-6 px-4 sm:px-6 md:px-12">
+      <div className="static overflow-hidden bg-hero-pattern bg-center bg-cover md:bg-top pb-20 md:min-h-screen max-w-screen-2xl mx-auto">
+        <div className="absolute top-0 left-0 bottom-0 right-0 bg-opacity-60 bg-gray-100 transform origin-top-left -skew-y-25"></div>
+        <div className="relative max-w-screen-xl mx-auto">
+          <div className="pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+            <div className="pt-6 px-4 sm:px-6 md:px-12">
                   <nav
-                    className="relative flex items-center justify-between sm:h-10 lg:justify-start"
+                    className="flex items-center justify-between sm:h-10 lg:justify-start"
                     aria-label="Global"
                   >
                     <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                       {navigation.map((item) => (
-                        <a key={item.name} href={item.href} className="font-medium tracking-wider uppercase text-white hover:text-yellow-500">
+                        <a key={item.name} href={item.href} className="font-bold tracking-wider uppercase text-white hover:text-yellow-500">
                           {item.name}
                         </a>
                       ))}
@@ -50,7 +50,7 @@ export default function Header() {
             </main>
           </div>
         </div>
-   
+
         
       </div>
     )

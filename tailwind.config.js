@@ -36,7 +36,8 @@ module.exports = {
     variants: {
       extend: {
         transform: ['hover'],
-        animation: ['hover', ],
+        transitionProperty: ['hover', 'focus'],
+        animation: ['hover', 'active'],
         translate: ['group-hover'],
         scale: ['active'],
       },

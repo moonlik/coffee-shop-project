@@ -3,25 +3,29 @@ import Header from './Header';
 import About from './About';
 import Menu from './Menu';
 import Footer from './Footer';
+import ImageSlider from './ImageSlider';
+import Cart from './Cart';
 
-const App = () => {
+export default function App() {
 	const coffeeData = [
-		{ id: 1, name: 'Espresso', description: 'Lorem ipsum dolor sit amet', price: '$2' },
-		{ id: 2, name: 'Americano', description: 'Lorem ipsum dolor sit amet', price: '$3' },
-		{ id: 3, name: 'Latte', description: 'Lorem ipsum dolor sit amet', price: '$4.5' },
-		{ id: 4, name: 'Capuccino', description: 'Lorem ipsum dolor sit amet', price: '$3' },
-		{ id: 5, name: 'Macchiato', description: 'Lorem ipsum dolor sit amet', price: '$4.5' },
+		{ id: 1, name: 'Espresso', description: 'Lorem ipsum dolor sit amet', price: '2' },
+		{ id: 2, name: 'Americano', description: 'Lorem ipsum dolor sit amet', price: '3' },
+		{ id: 3, name: 'Latte', description: 'Lorem ipsum dolor sit amet', price: '5.5' },
+		{ id: 4, name: 'Capuccino', description: 'Lorem ipsum dolor sit amet', price: '3' },
+		{ id: 5, name: 'Macchiato', description: 'Lorem ipsum dolor sit amet', price: '4.5' },
 	]
 
 	const dessertData = [
-		{id: 1, name: 'Blueberry Muffin', description: 'Bursting taste of fresh blueberries', price: '$3'},
-		{id: 2, name: 'Cinnamon Roll with Raspberry', description: 'Classic roll and juicy raspberry', price: '$4'},
-		{id: 3, name: 'Classic Cheesecake', description: 'When you want nothing superfluous', price: '$3.6'},
-		{id: 4, name: 'Carrot Cake', description: 'Lorem ipsum dolor sit amet', price: '$4'},
-		{id: 5, name: 'Mango mousse', description: 'Lorem ipsum dolor sit amet', price: '$10.6'},
+		{id: 11, name: 'Blueberry Muffin', description: 'Bursting taste of fresh blueberries', price: '3'},
+		{id: 21, name: 'Cinnamon Roll with Raspberry', description: 'Classic roll and juicy raspberry', price: '4'},
+		{id: 31, name: 'Classic Cheesecake', description: 'When you want nothing superfluous', price: '3.6'},
+		{id: 41, name: 'Carrot Cake', description: 'Lorem ipsum dolor sit amet', price: '4'},
+		{id: 51, name: 'Mango mousse', description: 'Lorem ipsum dolor sit amet', price: '10.6'},
 	]
 	
 	const [cartItems, setCartItems] = useState([]);
+
+	const [cartShowing, setCartShowing] = useState(false);
 
 	const getTotalItems = (items) =>
     	items.reduce((sum, item) => sum + item.amount, 0);
@@ -47,11 +51,9 @@ const App = () => {
 		<div>
 			<Header />
 			<About />
-			<div className="bg-company-image bg-bottom bg-cover h-64 md:h-96"></div>
-			<Menu coffee={coffeeData} dessert={dessertData} cartItems={cartItems} addToCart={handleAddToCart} badgeContent={getTotalItems(cartItems)} />
+			<Menu coffee={coffeeData} dessert={dessertData} addToCart={handleAddToCart} badgeContent={getTotalItems(cartItems)} handleIsShowing={setCartShowing} />
+			<Cart show={cartShowing} cartItems={cartItems} handleIsShowing={setCartShowing}/>
 			<Footer />
 		</div>
 	);
 }
-
-export default App;
