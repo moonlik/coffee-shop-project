@@ -1,6 +1,6 @@
 # Coffee shop project based on React
 
-This is the Coffee Shop pet project. 
+This is the pet project based on create-react-app. **[Demo version](https://coffee-house-test.netlify.app/)**.
 
 Main purposes of this project:
 - Learn [React](https://github.com/facebook/create-react-app).
@@ -15,13 +15,13 @@ Main purposes of this project:
 
 In the project directory, you can run:
 
-`npm start`
+```npm start```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
-`npm run build`
+```npm run build```
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
