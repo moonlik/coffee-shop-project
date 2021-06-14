@@ -29,7 +29,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <img src={coffeeBag} className="absolute bottom-10 right-10 w-40 lg:w-auto" alt="A bag with coffee beans"></img>
+                <img src={coffeeBag} className="absolute bottom-5 right-5 w-28 lg:w-auto" alt="A bag with coffee beans"></img>
             </div>
 
             <div className="bg-company-image bg-bottom bg-cover h-64 md:h-96 max-w-screen-2xl mx-auto"></div>

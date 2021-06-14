@@ -20,13 +20,13 @@ export default function Cart(props) {
                         
                         <div className="h-screen flex flex-col py-6 bg-white shadow-xl overflow-y-scroll">
                             <div className="px-4 sm:px-6">
-                                <p className="text-lg lg:text-2xl font-serif font-semibold text-gray-900 border-b pb-8">Shopping Cart</p>
+                                <p className="text-lg lg:text-2xl font-serif font-medium text-gray-900 border-b pb-8">Shopping Cart</p>
                             </div>
                             <div className="mt-6 flex-1 px-4 sm:px-6">
                                 {props.cartItems.length !== 0 ? props.cartItems.map((product) => (
                                     <div className="flex gap-8 py-6" key={product.id}>
                                         <div className="w-3/5">
-                                            <h4 className="text-lg font-semibold">{product.name}</h4> 
+                                            <h4 className="text-lg font-medium">{product.name}</h4> 
                                         </div>
                                         <div className="w-1/5 self-center">
                                             <p className="text-lg">{product.amount}</p>

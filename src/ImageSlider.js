@@ -12,7 +12,7 @@ export default function ImageSlider() {
     
     return (
         <div className="relative max-w-screen-2xl mx-auto bg-white h-72 overflow-hidden">
-            <div className="relative hover:animate-scroll flex">
+            <div className="relative h-full hover:animate-scroll flex">
                 {instaPhoto.map((photo) => (
                     <img key={photo.id} src={photo.url} alt="Instagram" className="object-cover"></img>
                 ))}
