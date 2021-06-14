@@ -7,8 +7,8 @@ const navigation = [
 
 export default function Header() {
     return (
-      <div className="static overflow-hidden bg-hero-pattern bg-center bg-cover md:bg-top pb-20 md:min-h-screen max-w-screen-2xl mx-auto">
-        <div className="absolute top-0 left-0 bottom-0 right-0 bg-opacity-60 bg-gray-100 transform origin-top-left -skew-y-25"></div>
+      <div className="relative overflow-hidden bg-hero-pattern bg-center bg-cover md:bg-top pb-20 md:min-h-screen max-w-screen-2xl mx-auto">
+        <div className="absolute inset-0 bg-opacity-70 bg-gray-100 transform origin-top-left -skew-y-25"></div>
         <div className="relative max-w-screen-xl mx-auto">
           <div className="pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
             <div className="pt-6 px-4 sm:px-6 md:px-12">
@@ -35,7 +35,7 @@ export default function Header() {
                 </svg>
             </button>
   
-            <main className="md:ml-12 px-4 sm:px-6 lg:px-8 mt-28 lg:mt-36">
+            <main className="md:ml-12 px-4 sm:px-6 lg:px-8 mt-26 md:mt-36">
               <div className="text-left">
                 <h1 className="tracking-tight text-yellow-700 text-5xl md:text-7xl font-serif">
                   <span className="block">Baked desserts</span>{' '}
