@@ -52,6 +52,7 @@ export default function App() {
 			<Header />
 			<About />
 			<Menu coffee={coffeeData} dessert={dessertData} addToCart={handleAddToCart} badgeContent={getTotalItems(cartItems)} handleIsShowing={setCartShowing} />
+			<ImageSlider />
 			<Cart show={cartShowing} cartItems={cartItems} handleIsShowing={setCartShowing}/>
 			<Footer />
 		</div>

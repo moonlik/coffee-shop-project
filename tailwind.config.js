@@ -30,6 +30,15 @@ module.exports = {
             '800': '#2A1C04',
             '900': '#000000'
           }
+        },
+        keyframes: {
+          scroll: {
+            '0%': { transform: 'translateX(0)' },
+            '100%': { transform: 'translateX(calc(-15rem * 4))' },
+          }
+        },
+        animation: {
+          scroll: 'scroll 20s linear infinite',
         }
       },
     },
