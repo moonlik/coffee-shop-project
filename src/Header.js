@@ -41,7 +41,7 @@ export default function Header() {
                   <span className="block">Baked desserts</span>{' '}
                   <span className="block">& roasted coffee</span>
                 </h1>
-                <p className="mt-3 text-brown-700 sm:mt-5 text-xl sm:max-w-xl md:mt-5 md:text-xl lg:mx-0">
+                <p className="mt-3 text-brown-700 sm:mt-5 text-lg max-w-md md:max-w-xl md:mt-5 md:text-xl lg:mx-0">
                   Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
                   fugiat veniam occaecat fugiat aliqua.
                 </p>

@@ -46,10 +46,10 @@ export default function Cart(props) {
 
                                 <div className="border-t pt-8 flex justify-between">
                                     <div className="w-3/5">
-                                        <h2 className="text-xl font-semibold">Total:</h2>
+                                        <h2 className="text-lg md:text-xl font-medium">Total:</h2>
                                     </div>
                                     <div className="w-1/5">
-                                        <p className="text-xl">${getTotalSum(props.cartItems)}</p>
+                                        <p className="text-lg">${getTotalSum(props.cartItems)}</p>
                                     </div>
                                 </div>
                                 

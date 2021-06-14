@@ -7,7 +7,7 @@ export default function About() {
                 <div className="flex flex-wrap xl:flex-nowrap items-start gap-10 lg:gap-20">
                     <div className="xl:w-2/3 px-4">
                         <div className="max-w-3xl mx-auto xl:pl-16 ">
-                            <h2 className="text-3xl md:text-5xl font-serif md:leading-normal">A boutique and fun cafe that brought together coffee cultures of the whole world in California.</h2>
+                            <h2 className="text-3xl md:text-5xl font-serif md:leading-normal">A boutique & fun cafe that brought together coffee cultures of the whole world in California.</h2>
                             <p className="mt-3 sm:mt-5 text-lg md:text-xl font-light">Duis congue sapien non mauris tristique, eu porttitor arcu feugiat. Quisque sit amet quam sodales, porttitor lectus vitae, consectetur est. Curabitur ac erat vel mi auctor gravida eu in ex. Nulla lorem turpis, faucibus vitae condimentum non, auctor id urna. Maecenas vitae volutpat magna.</p>
                         </div>  
                     </div>
