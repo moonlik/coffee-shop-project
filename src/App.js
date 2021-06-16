@@ -2,9 +2,12 @@ import { useState } from 'react';
 import Header from './Header';
 import About from './About';
 import Menu from './Menu';
+import Product from './Product';
 import Footer from './Footer';
 import ImageSlider from './ImageSlider';
 import Cart from './Cart';
+import CartButton from './CartButton';
+import CartItem from './CartItem';
 
 export default function App() {
 	const coffeeData = [
@@ -46,14 +49,37 @@ export default function App() {
 		  return [...prev, { ...clickedItem, amount: 1 }];
 		});
 	};
+
+	const handleRemoveFromCart = (id) => {
+		setCartItems(prev =>
+		  prev.reduce((ack, item) => {
+			if (item.id === id) {
+			  if (item.amount === 1) return ack;
+			  return [...ack, { ...item, amount: item.amount - 1 }];
+			} else {
+			  return [...ack, item];
+			}
+		  }, [])
+		);
+	  };
+
+	const sumTotalCartItems = (items) =>
+		items.reduce((sum, item) => sum + (item.amount * parseFloat(item.price)), 0);
 	
 	return (
 		<div>
 			<Header />
 			<About />
-			<Menu coffee={coffeeData} dessert={dessertData} addToCart={handleAddToCart} badgeContent={getTotalItems(cartItems)} handleIsShowing={setCartShowing} />
+			<Menu 
+				coffee={ <Product addToCart={handleAddToCart} productItems={coffeeData} />} 
+				dessert={ <Product addToCart={handleAddToCart} productItems={dessertData} />} 
+				button={ <CartButton show={setCartShowing} badgeContent={getTotalItems(cartItems)} /> } />
 			<ImageSlider />
-			<Cart show={cartShowing} cartItems={cartItems} handleIsShowing={setCartShowing}/>
+			<Cart 
+				isShowing={cartShowing} 
+				totalItems={sumTotalCartItems(cartItems)} 
+				show={setCartShowing} 
+				item={ <CartItem cartItems={cartItems} removeFromCart={handleRemoveFromCart} />} />
 			<Footer />
 		</div>
 	);

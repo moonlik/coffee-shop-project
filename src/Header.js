@@ -12,18 +12,17 @@ export default function Header() {
         <div className="relative max-w-screen-xl mx-auto">
           <div className="pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
             <div className="pt-6 px-4 sm:px-6 md:px-12">
-                  <nav
-                    className="flex items-center justify-between sm:h-10 lg:justify-start"
-                    aria-label="Global"
-                  >
-                    <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                      {navigation.map((item) => (
-                        <a key={item.name} href={item.href} className="font-medium tracking-wider uppercase text-white hover:text-yellow-500">
-                          {item.name}
-                        </a>
-                      ))}
-                    </div>
-                  </nav>
+              <nav
+                className="flex items-center justify-between sm:h-10 lg:justify-start"
+                aria-label="Global">
+                <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                  {navigation.map((item) => (
+                    <a key={item.name} href={item.href} className="font-medium tracking-wider uppercase text-brown-700 hover:text-yellow-500">
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              </nav>
             </div>
             <button type="button" className="absolute z-50 top-4 right-4 w-16 h-16 rounded-full bg-yellow-900 text-white block md:hidden">
                 <span className="sr-only">Open site navigation</span>
@@ -45,13 +44,11 @@ export default function Header() {
                   Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
                   fugiat veniam occaecat fugiat aliqua.
                 </p>
-                <a href="#menu" className="transition duration-300 ease-in-out w-max mt-6 sm:mt-8 tracking-wider flex items-center justify-center px-8 py-3 border-2 border-brown-500 font-medium rounded-md text-white bg-brown-500 hover:bg-transparent hover:text-brown-500 md:py-4 md:text-md md:px-10 uppercase">Our menu</a>
+                <a href="#menu" className="transition duration-500 ease-in-out w-max mt-6 sm:mt-8 tracking-wider flex items-center justify-center px-8 py-3 border-2 border-brown-500 font-medium rounded-md text-white bg-brown-500 hover:bg-transparent hover:text-brown-500 md:py-4 md:text-md md:px-10 uppercase">Order now</a>
               </div>
             </main>
           </div>
         </div>
-
-        
       </div>
     )
   }
