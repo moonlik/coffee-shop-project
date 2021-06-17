@@ -4,11 +4,11 @@ import coffeeTree from './assets/images/coffee-tree.png';
 export default function Menu(props) {
     return (
         <div className="relative min-h-screen max-w-screen-2xl py-20 mx-auto pt-16 md:pt-32 px-4 text-gray-700 bg-white" >
-            <img src={coffeeTree} alt="Coffee beans" className="absolute bottom-10 left-0"></img>
+            <img src={coffeeTree} alt="Coffee beans" className="absolute bottom-16 left-0"></img>
 
-            <div className="px-10 md:px-20 mb-10" id="menu" >
+            <div className="px-10 md:px-20 mb-10 max-w-4xl mx-auto" id="menu" >
                 <h2 className="text-center text-3xl md:text-5xl font-thin font-serif md:leading-relaxed">Our Menu</h2>
-                <p className="text-center text-lg md:text-xl font-light">Duis congue sapien non mauris tristique, eu porttitor arcu feugiat. Quisque sit amet quam sodales, porttitor lectus vitae, consectetur.</p>
+                <p className="text-center text-md md:text-lg font-light">Duis congue sapien non mauris tristique, eu porttitor arcu feugiat. Quisque sit amet quam sodales, porttitor lectus vitae, consectetur.</p>
             </div>
 
             <div className="max-w-md md:max-w-4xl mx-auto md:flex md:gap-20">
