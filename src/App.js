@@ -8,6 +8,7 @@ import ImageSlider from './ImageSlider';
 import Cart from './Cart';
 import CartButton from './CartButton';
 import CartItem from './CartItem';
+import Feature from './Feature';
 
 export default function App() {
 	const coffeeData = [
@@ -74,6 +75,7 @@ export default function App() {
 				coffee={ <Product addToCart={handleAddToCart} productItems={coffeeData} />} 
 				dessert={ <Product addToCart={handleAddToCart} productItems={dessertData} />} 
 				button={ <CartButton show={setCartShowing} badgeContent={getTotalItems(cartItems)} /> } />
+			<Feature />
 			<ImageSlider />
 			<Cart 
 				isShowing={cartShowing} 

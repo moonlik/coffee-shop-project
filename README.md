@@ -29,5 +29,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 # Credits
 
 - Vector graphics by [pch.vector](https://www.freepik.com/pch-vector) and logo by [Sergey_Kandakov](https://www.freepik.com/sergey-kandakov).
+- Icons made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com/).
 - Inspiration comes from [these template](https://preview.colorlib.com/#decoffee).
 - Photo from [Unsplash](https://unsplash.com/).
