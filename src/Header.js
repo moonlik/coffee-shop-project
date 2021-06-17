@@ -34,7 +34,7 @@ export default function Header() {
                 </svg>
             </button>
   
-            <main className="md:ml-12 px-4 sm:px-6 lg:px-8 mt-26 md:mt-36">
+            <main className="md:ml-12 px-4 sm:px-6 lg:px-8 mt-24 md:mt-36">
               <div className="text-left">
                 <h1 className="tracking-tight text-yellow-700 text-5xl md:text-7xl font-serif">
                   <span className="block">Baked desserts</span>{' '}
