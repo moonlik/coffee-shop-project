@@ -10,7 +10,7 @@ export default function Footer() {
                         <p className="">Aliquam tempor ante at dignissim blandit. Suspendisse nec euismod odio, ac luctus tellus.</p>
                     </div>
                 </div>
-                <div className="md:w-1/2 self-center text-gray-900">
+                <div className="md:w-1/2 self-center text-gray-800">
                     <div className="max-w-md mx-auto text-center mb-6">
                         <h3 className="font-medium font-serif text-lg mb-3">Contact Us</h3>
                         <p>+10 (00) 000 0000</p>
@@ -27,7 +27,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="text-brown-600 text-center py-2">
+            <div className="text-gray-800 text-center py-2">
                 <p className="text-sm">Build by <a href="https://github.com/moonlik">moonlik</a></p>
             </div>
         </div>
