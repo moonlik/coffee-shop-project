@@ -2,14 +2,14 @@ import coffeeBeans from './assets/images/coffee-beans.png'
 
 export default function Feature () {
     return (
-        <div className="max-w-screen-2xl mx-auto py-28 bg-no-repeat bg-white bg-top text-brown-800" style={{"background-image": `url(${coffeeBeans})`}}>
+        <div className="max-w-screen-2xl mx-auto py-28 bg-no-repeat bg-white bg-top text-gray-800" style={{backgroundImage: `url(${coffeeBeans})`}}>
             <div className="px-10 md:px-20 mb-20 max-w-4xl mx-auto">
                 <h2 className="text-center text-3xl md:text-5xl font-thin font-serif md:leading-relaxed">Values</h2>
                 <p className="text-center text-md md:text-lg font-light">Duis congue sapien non mauris tristique, eu porttitor arcu feugiat. Quisque sit amet quam sodales, porttitor lectus vitae, consectetur.</p>
             </div>
 
             <div className="relative max-w-4xl mx-auto">
-                <hr class="absolute left-1/2 border-none bg-gradient-to-b from-white via-brown-400 to-white w-px h-full invisible sm:visible" />
+                <hr className="absolute left-1/2 border-none bg-gradient-to-b from-white via-brown-400 to-white w-px h-full invisible sm:visible" />
                 <div className="flex flex-col gap-6 sm:gap-0">
                     <div className="flex gap-6 float-left sm:w-1/2 bg-gradient-to-r from-yellow-50 p-6 rounded-l-3xl items-center">
                         <div className="w-1/5">

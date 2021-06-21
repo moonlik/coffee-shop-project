@@ -3,7 +3,7 @@ import coffeeBag from './assets/images/coffee-beans-bag.png'
 export default function About() {
     return (
         <>
-            <div className="relative py-20 min-h-screen max-w-screen-2xl mx-auto pt-16 md:pt-36 pl-4 text-gray-700 bg-white" id="about">
+            <div className="relative max-w-screen-2xl mx-auto pt-20 md:pt-32 pb-28 md:pb-40 pl-4 text-gray-700 bg-white" id="about">
                 <div className="flex flex-wrap xl:flex-nowrap items-start gap-10 lg:gap-20">
                     <div className="xl:w-2/3 px-4">
                         <div className="max-w-3xl mx-auto xl:pl-16 ">
