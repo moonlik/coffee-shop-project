@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from './Header';
+import Sidebar from './Sidebar';
 import About from './About';
 import Menu from './Menu';
 import Product from './Product';
@@ -11,6 +12,13 @@ import CartItem from './CartItem';
 import Feature from './Feature';
 
 export default function App() {
+	const navigation = [
+		{ name: 'Home', href: '#' },
+		{ name: 'About us', href: '#about' },
+		{ name: 'Menu', href: '#menu' },
+		{ name: 'Contact us', href: '#contact' }
+	]
+
 	const coffeeData = [
 		{ id: 1, name: 'Espresso', description: 'Lorem ipsum dolor sit amet', price: '2' },
 		{ id: 2, name: 'Americano', description: 'Lorem ipsum dolor sit amet', price: '3' },
@@ -30,6 +38,8 @@ export default function App() {
 	const [cartItems, setCartItems] = useState([]);
 
 	const [cartShowing, setCartShowing] = useState(false);
+
+	const [sidebarShowing, setSidebarShowing] = useState(false);
 
 	const getTotalItems = (items) =>
     	items.reduce((sum, item) => sum + item.amount, 0);
@@ -68,8 +78,9 @@ export default function App() {
 		items.reduce((sum, item) => sum + (item.amount * parseFloat(item.price)), 0);
 	
 	return (
-		<div>
-			<Header />
+		<>
+			<Header navigation={navigation} show={setSidebarShowing} />
+			<Sidebar navigation={navigation} isShowing={sidebarShowing} show={setSidebarShowing} />
 			<About />
 			<Menu 
 				coffee={ <Product addToCart={handleAddToCart} productItems={coffeeData} />} 
@@ -83,6 +94,6 @@ export default function App() {
 				show={setCartShowing} 
 				item={ <CartItem cartItems={cartItems} removeFromCart={handleRemoveFromCart} />} />
 			<Footer />
-		</div>
+		</>
 	);
 }

@@ -1,39 +1,29 @@
-const navigation = [
-    { name: 'Home', href: '#' },
-    { name: 'About us', href: '#about' },
-    { name: 'Menu', href: '#menu' },
-    { name: 'Contact us', href: '#contact' }
-  ]
-
-export default function Header() {
+export default function Header(props) {
     return (
-      <div className="relative overflow-hidden bg-hero-pattern bg-center bg-cover md:bg-top pb-20 md:min-h-screen max-w-screen-2xl mx-auto">
-        <div className="absolute inset-0 bg-opacity-70 bg-gray-100 transform origin-top-left -skew-y-25"></div>
+      <div className="relative overflow-hidden bg-hero-pattern bg-center bg-cover md:bg-top pb-32 max-w-screen-2xl mx-auto">
+        <div className="absolute inset-0 bg-opacity-80 bg-gray-100 transform origin-top-left -skew-y-25"></div>
         <div className="relative max-w-screen-xl mx-auto">
+          <button onClick={() => props.show(true)} type="button" className="md:hidden mt-3 ml-3 rounded-md p-2 inline-flex items-center justify-center text-yellow-800 hover:text-yellow-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500">
+                <span className="sr-only">Open site navigation</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+          </button>
+            
           <div className="pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
             <div className="pt-6 px-4 sm:px-6 md:px-12">
               <nav
                 className="flex items-center justify-between sm:h-10 lg:justify-start"
                 aria-label="Global">
                 <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                  {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="font-medium tracking-wider uppercase text-brown-700 hover:text-yellow-500">
-                      {item.name}
+                  {props.navigation.map((nav) => (
+                    <a key={nav.name} href={nav.href} className="font-medium tracking-wider uppercase text-brown-700 hover:text-yellow-500">
+                      {nav.name}
                     </a>
                   ))}
                 </div>
               </nav>
             </div>
-            <button type="button" className="absolute z-50 top-4 right-4 w-16 h-16 rounded-full bg-yellow-900 text-white block md:hidden">
-                <span className="sr-only">Open site navigation</span>
-                <svg width="24" height="24" fill="none" className="absolute top-1/2 left-1/2 -mt-3 -ml-3 transition duration-300 transform">
-                    <path d="M4 8h16M4 16h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                </svg>
-                <svg width="24" height="24" fill="none" className="absolute top-1/2 left-1/2 -mt-3 -ml-3 transition duration-300 transform opacity-0 scale-80">
-                    <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                </svg>
-            </button>
-  
             <main className="md:ml-12 px-4 sm:px-6 lg:px-8 mt-24 md:mt-36">
               <div className="text-left">
                 <h1 className="tracking-tight text-yellow-700 text-5xl md:text-7xl font-serif">
@@ -48,7 +38,7 @@ export default function Header() {
               </div>
             </main>
           </div>
-        </div>
+        </div> 
       </div>
     )
   }
