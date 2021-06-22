@@ -3,7 +3,7 @@ import logo from './assets/images/coffee-house-logo.png';
 export default function Sidebar(props) {
     if(props.isShowing) {
         return ( 
-            <div className="absolute top-0 inset-x-0 z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+            <div className="absolute top-0 inset-x-0 z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 animate-popup">
                 <div className="p-2 transition transform duration-300 ease-in origin-top-right md:hidden">  
                     <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                         <div className="py-3">

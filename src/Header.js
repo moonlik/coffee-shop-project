@@ -25,7 +25,7 @@ export default function Header(props) {
               </nav>
             </div>
             <main className="md:ml-12 px-4 sm:px-6 lg:px-8 mt-24 md:mt-36">
-              <div className="text-left">
+              <div className="text-left delay-150 animate-fadein-bottom">
                 <h1 className="tracking-tight text-yellow-700 text-5xl md:text-7xl font-serif">
                   <span className="block">Baked desserts</span>{' '}
                   <span className="block">& roasted coffee</span>

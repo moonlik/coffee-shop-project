@@ -34,11 +34,37 @@ module.exports = {
         keyframes: {
           scroll: {
             '0%': { transform: 'translateX(0)' },
-            '100%': { transform: 'translateX(calc(-15rem * 4))' },
+            '100%': { transform: 'translateX(-10%)' },
+          },
+          'fadein-bottom': {
+            '0%': { opacity: 0, transform: 'translateY(10%)' },
+            '100%': { opacity: 1, transform: 'translateY(0)' }
+          },
+          'fadein-top': {
+            '0%': { opacity: 0, transform: 'translateY(-10%)' },
+            '100%': { opacity: 1, transform: 'translateY(0)' }
+          },
+          'fadein-left': {
+            '0%': { opacity: 0, transform: 'translateX(-10%)' },
+            '100%': { opacity: 1, transform: 'translateX(0)' }
+          },
+          'fadein-right': {
+            '0%': { opacity: 0, transform: 'translateX(10%)' },
+            '100%': { opacity: 1, transform: 'translateX(0)' }
+          },
+          popup: {
+            '0%': { opacity: 0, transform: 'scaleX(0.9) scaleY(0.9)' },
+            '100%': { opacity:1, transform: 'scaleX(1) scaleY(1)' }
           }
         },
         animation: {
           scroll: 'scroll 20s linear infinite',
+          'fadein-bottom': 'fadein-bottom 1s ease-in 1',
+          'fadein-top': 'fadein-top 1s ease-in 1',
+          'fadein-left': 'fadein-left 1s ease-in 1',
+          'fadein-right': 'fadein-right 1s ease-in 1',
+          popup: 'popup 150ms ease-in 1',
+          'fadein-right-quick': 'fadein-right 150ms ease-in 1',
         }
       },
     },
