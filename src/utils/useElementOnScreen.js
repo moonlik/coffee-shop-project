@@ -7,7 +7,7 @@ export default function useElementOnScreen(options) {
     const callbackFunction = (entries) => {
       const [ entry ] = entries;
 
-      if (Math.floor(entry.intersectionRatio) === 1 && entry.isIntersecting) {
+      if (entry.isIntersecting) {
         setIsVisible(true);
       }
     };

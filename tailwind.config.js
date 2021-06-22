@@ -37,19 +37,15 @@ module.exports = {
             '100%': { transform: 'translateX(-10%)' },
           },
           'fadein-bottom': {
-            '0%': { opacity: 0, transform: 'translateY(10%)' },
-            '100%': { opacity: 1, transform: 'translateY(0)' }
-          },
-          'fadein-top': {
-            '0%': { opacity: 0, transform: 'translateY(-10%)' },
+            '0%': { opacity: 0, transform: 'translateY(20%)' },
             '100%': { opacity: 1, transform: 'translateY(0)' }
           },
           'fadein-left': {
-            '0%': { opacity: 0, transform: 'translateX(-10%)' },
+            '0%': { opacity: 0, transform: 'translateX(-20%)' },
             '100%': { opacity: 1, transform: 'translateX(0)' }
           },
           'fadein-right': {
-            '0%': { opacity: 0, transform: 'translateX(10%)' },
+            '0%': { opacity: 0, transform: 'translateX(20%)' },
             '100%': { opacity: 1, transform: 'translateX(0)' }
           },
           popup: {
@@ -60,7 +56,6 @@ module.exports = {
         animation: {
           scroll: 'scroll 20s linear infinite',
           'fadein-bottom': 'fadein-bottom 1s ease-in 1',
-          'fadein-top': 'fadein-top 1s ease-in 1',
           'fadein-left': 'fadein-left 1s ease-in 1',
           'fadein-right': 'fadein-right 1s ease-in 1',
           popup: 'popup 150ms ease-in 1',
