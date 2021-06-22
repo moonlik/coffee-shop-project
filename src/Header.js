@@ -17,7 +17,7 @@ export default function Header(props) {
                 aria-label="Global">
                 <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                   {props.navigation.map((nav) => (
-                    <a key={nav.name} href={nav.href} className="font-medium tracking-wider uppercase text-brown-700 hover:text-yellow-500">
+                    <a key={nav.name} href={nav.href} className="font-medium tracking-wider uppercase text-brown-500 hover:text-brown-700">
                       {nav.name}
                     </a>
                   ))}
