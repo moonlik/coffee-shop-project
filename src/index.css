@@ -4,11 +4,13 @@
 @font-face {
     font-family: 'Raleway';
     src: url(./assets/fonts/Raleway-VariableFont_wght.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'PlayfairDisplay';
     src: url(./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+    font-display: swap;
 }
   
 @tailwind utilities;
