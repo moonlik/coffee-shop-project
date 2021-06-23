@@ -10,7 +10,7 @@ export default function CartItem(props) {
                         <div className="w-1/5 self-center">
                             <p className="text-lg">${product.price}</p>
                         </div>
-                        <div className="w-1/5 flex self-center gap-3">
+                        <div className="w-1/5 flex self-center space-x-3">
                             <p className="text-lg">{product.amount}</p>
                             <div className="self-end cursor-pointer" onClick={() => props.removeFromCart(product.id)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
