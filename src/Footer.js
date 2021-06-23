@@ -6,8 +6,7 @@ export default function Footer() {
             <div className="flex flex-wrap md:flex-nowrap justify-center gap-y-20 py-14 md:divide-x md:divide-brown-500 max-w-screen-xl mx-auto text-brown-700">
                 <div className="md:w-1/2">
                     <div className="max-w-md mx-auto text-center">
-                        <img className="w-32 mx-auto" src={logo} alt="Coffee House logo"></img>
-                        <p className="">Aliquam tempor ante at dignissim blandit. Suspendisse nec euismod odio, ac luctus tellus.</p>
+                        <img width="150" height="139" className="mx-auto" src={logo} alt="Coffee House logo"></img>
                     </div>
                 </div>
                 <div className="md:w-1/2 self-center text-gray-800">

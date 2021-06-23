@@ -7,7 +7,7 @@ export default function Sidebar(props) {
                 <div className="p-2 transition transform duration-300 ease-in origin-top-right md:hidden">  
                     <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                         <div className="py-3">
-                            <img className="w-20 mx-auto" src={logo} alt="Coffee House logo"></img>
+                            <img width="80" height="74" className="w-20 mx-auto" src={logo} alt="Coffee House logo"></img>
                             <p className="text-sm text-center text-brown-700">Aliquam tempor ante at dignissim blandit.</p>
                         </div>
                         <div className="px-2 pt-2 pb-3 space-y-1">

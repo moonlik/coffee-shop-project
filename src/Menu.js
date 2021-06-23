@@ -10,7 +10,7 @@ export default function Menu(props) {
 
     return (
         <div className="relative min-h-screen max-w-screen-2xl py-20 mx-auto pt-16 md:pt-32 px-4 text-gray-700 bg-white" >
-            <img src={coffeeTree} alt="Coffee beans" className="absolute bottom-16 left-0"></img>
+            <img width="281" height="300" src={coffeeTree} alt="Coffee beans" className="absolute bottom-16 left-0"></img>
 
             <div className="px-10 md:px-20 mb-10 max-w-4xl mx-auto" id="menu" ref={containerRef}>
                 <h2 className="text-center text-3xl md:text-5xl font-thin font-serif md:leading-relaxed">Our Menu</h2>
