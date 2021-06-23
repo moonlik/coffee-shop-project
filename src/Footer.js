@@ -3,7 +3,7 @@ import logo from './assets/images/coffee-house-logo.png';
 export default function Footer() {
     return (
         <div className="bg-yellow-50 max-w-screen-2xl mx-auto" id="contact">
-            <div className="flex flex-wrap md:flex-nowrap justify-center gap-y-20 py-14 md:divide-x md:divide-brown-500 max-w-screen-xl mx-auto text-brown-700">
+            <div className="flex flex-wrap md:flex-nowrap justify-center space-y-20 md:space-y-0 py-14 md:divide-x md:divide-brown-500 max-w-screen-xl mx-auto text-brown-700">
                 <div className="md:w-1/2">
                     <div className="max-w-md mx-auto text-center">
                         <img width="150" height="139" className="mx-auto" src={logo} alt="Coffee House logo"></img>
@@ -16,7 +16,7 @@ export default function Footer() {
                         <p>30/D, Lorem Ipsum, Alighdat CA 00000</p>
                     </div>
                     
-                    <div className="flex gap-4 mt-4 justify-center">
+                    <div className="flex space-x-4 mt-4 justify-center">
                         <a href="#contact" className="transform transition duration-500 ease-in-out hover:-scale-x-1 block">
                             <svg className="w-4" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><path fill="#000" d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z"></path><path fill="#fff" d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z"></path></svg>
                         </a>
