@@ -13,7 +13,7 @@ export default function Menu(props) {
             <img width="281" height="300" src={coffeeTree} alt="Coffee beans" className="absolute bottom-16 left-0"></img>
 
             <div className="px-10 md:px-20 mb-10 max-w-4xl mx-auto" id="menu" ref={containerRef}>
-                <h2 className="text-center text-3xl md:text-5xl font-thin font-serif md:leading-relaxed">Our Menu</h2>
+                <h2 className="text-center text-3xl md:text-5xl font-thin font-serif mb-4 md:mb-6">Our Menu</h2>
                 <p className="text-center text-md md:text-lg font-light">Duis congue sapien non mauris tristique, eu porttitor arcu feugiat. Quisque sit amet quam sodales, porttitor lectus vitae, consectetur.</p>
             </div>
 

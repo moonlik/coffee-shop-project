@@ -24,8 +24,8 @@ export default function Header(props) {
                 </div>
               </nav>
             </div>
-            <main className="md:ml-12 px-4 sm:px-6 lg:px-8 mt-24 md:mt-36">
-              <div className="text-left delay-150 animate-fadein-bottom">
+            <div className="ml-4 md:ml-12 px-4 md:px-8 mt-24 md:mt-36">
+              <div className="text-left animate-fadein-bottom">
                 <h1 className="tracking-tight text-yellow-700 text-5xl md:text-7xl font-serif">
                   <span className="block">Baked desserts</span>{' '}
                   <span className="block">& roasted coffee</span>
@@ -36,7 +36,7 @@ export default function Header(props) {
                 </p>
                 <a href="#menu" className="transition duration-500 ease-in-out w-max mt-6 sm:mt-8 tracking-wider flex items-center justify-center px-8 py-3 border-2 border-brown-500 font-medium rounded-md text-white bg-brown-500 hover:bg-transparent hover:text-brown-500 md:py-4 md:text-md md:px-10 uppercase">Order now</a>
               </div>
-            </main>
+            </div>
           </div>
         </div> 
       </div>
