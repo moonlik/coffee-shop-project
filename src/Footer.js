@@ -7,6 +7,7 @@ export default function Footer() {
                 <div className="md:w-1/2">
                     <div className="max-w-md mx-auto text-center">
                         <img width="150" height="139" className="mx-auto" src={logo} alt="Coffee House logo"></img>
+                        <p className="max-w-sm mx-auto">Aliquam tempor ante at dignissim blandit. Suspendisse nec euismod odio, ac luctus tellus.</p>
                     </div>
                 </div>
                 <div className="md:w-1/2 self-center text-gray-800">
