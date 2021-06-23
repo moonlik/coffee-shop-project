@@ -3,9 +3,17 @@
 This is the pet project based on create-react-app. **[Demo version](https://coffee-house-test.netlify.app/)**.
 
 Main purposes of this project:
-- Learn [React](https://github.com/facebook/create-react-app).
-- Improve knowledge of [TailwindCSS](https://github.com/tailwindlabs/tailwindcss).
-- Improve knowledge of CSS, HTML and JS in general.
+- Learn [React](https://github.com/facebook/create-react-app):
+    - how hooks work
+    - what is component composition
+
+- Learn [TailwindCSS](https://github.com/tailwindlabs/tailwindcss):
+    - how to extend default theme in `tailwind.config` file
+    - what is mobile first conception
+
+- Improve knowledge of CSS, HTML and JS in general:
+    - how [intersection observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) works
+    - what is [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) in CSS
 
 **Features:**
 - You may play with the shopping cart by adding and removing items from it.
