@@ -20,19 +20,19 @@ export default function App() {
 	]
 
 	const coffeeData = [
-		{ id: 1, name: 'Espresso', description: 'Lorem ipsum dolor sit amet', price: '2' },
-		{ id: 2, name: 'Americano', description: 'Lorem ipsum dolor sit amet', price: '3' },
-		{ id: 3, name: 'Latte', description: 'Lorem ipsum dolor sit amet', price: '5.5' },
-		{ id: 4, name: 'Capuccino', description: 'Lorem ipsum dolor sit amet', price: '3' },
-		{ id: 5, name: 'Macchiato', description: 'Lorem ipsum dolor sit amet', price: '4.5' },
+		{ id: 1, name: 'Espresso', description: 'Lorem ipsum dolor sit amet', price: 2 },
+		{ id: 2, name: 'Americano', description: 'Lorem ipsum dolor sit amet', price: 3 },
+		{ id: 3, name: 'Latte', description: 'Lorem ipsum dolor sit amet', price: 5.44 },
+		{ id: 4, name: 'Capuccino', description: 'Lorem ipsum dolor sit amet', price: 3 },
+		{ id: 5, name: 'Macchiato', description: 'Lorem ipsum dolor sit amet', price: 4.25 },
 	]
 
 	const dessertData = [
-		{id: 11, name: 'Blueberry Muffin', description: 'Bursting taste of fresh blueberries', price: '3'},
-		{id: 21, name: 'Cinnamon Roll with Raspberry', description: 'Classic roll and juicy raspberry', price: '4'},
-		{id: 31, name: 'Classic Cheesecake', description: 'When you want nothing superfluous', price: '3.6'},
-		{id: 41, name: 'Carrot Cake', description: 'Lorem ipsum dolor sit amet', price: '4'},
-		{id: 51, name: 'Mango mousse', description: 'Lorem ipsum dolor sit amet', price: '10.6'},
+		{id: 11, name: 'Blueberry Muffin', description: 'Bursting taste of fresh blueberries', price: 3},
+		{id: 21, name: 'Cinnamon Roll with Raspberry', description: 'Classic roll and juicy raspberry', price: 4},
+		{id: 31, name: 'Classic Cheesecake', description: 'When you want nothing superfluous', price: 3.6},
+		{id: 41, name: 'Carrot Cake', description: 'Lorem ipsum dolor sit amet', price: 4.27},
+		{id: 51, name: 'Mango mousse', description: 'Lorem ipsum dolor sit amet', price: 10.34},
 	]
 	
 	const [cartItems, setCartItems] = useState([]);
@@ -75,7 +75,7 @@ export default function App() {
 	  };
 
 	const sumTotalCartItems = (items) =>
-		items.reduce((sum, item) => sum + (item.amount * parseFloat(item.price)), 0);
+		items.reduce((sum, item) => (sum + (item.amount * item.price)), 0).toFixed(2);
 	
 	return (
 		<>
