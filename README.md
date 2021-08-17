@@ -1,13 +1,15 @@
 # Coffee shop project based on React
 
-This is the pet project based on create-react-app. **[Demo version](https://coffee-house-test.netlify.app/)**.
+This is the pet project based on [create-react-app](https://github.com/facebook/create-react-app). 
+
+:link: [Demo](https://coffee-house-test.netlify.app/).
 
 Main purposes of this project:
-- Learn [React](https://github.com/facebook/create-react-app):
+- Learn [React](https://reactjs.org/):
     - how hooks work
     - what is component composition
 
-- Learn [TailwindCSS](https://github.com/tailwindlabs/tailwindcss):
+- Learn [TailwindCSS](https://tailwindcss.com/):
     - how to extend default theme in `tailwind.config` file
     - what is mobile first conception
 
@@ -16,10 +18,14 @@ Main purposes of this project:
     - what is [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) in CSS
 
 **Features:**
-- You may play with the shopping cart by adding and removing items from it.
+- You can play with the shopping cart by adding and removing items from it.
 - Responsive for mobile devices.
 
-## Available Scripts
+## Installation
+
+Pull the code from the repository and run:
+
+```npm install ```
 
 In the project directory, you can run:
 
@@ -34,7 +40,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-# Credits
+## Credits
 
 - Vector graphics by [pch.vector](https://www.freepik.com/pch-vector) and logo by [Sergey_Kandakov](https://www.freepik.com/sergey-kandakov).
 - Icons made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com/).
