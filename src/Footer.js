@@ -28,7 +28,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="text-gray-800 text-center py-2">
-                <p className="text-sm">Build by <a href="https://github.com/moonlik">moonlik</a></p>
+                <p className="text-sm">Build by <a href="https://github.com/moonlik/coffee-shop-project">moonlik</a></p>
             </div>
         </div>
         
